@@ -22,6 +22,10 @@ answer3 = "the letter g"
 Riddle4 = "I'm a god, a planet, and a measurer of heat. Who am I?"
 answer4 = "mercury"
 
+secretlevel = "_!"
+secretlevel1 = "Riddle me this BATMAN...What is long, hard, and has CUM in the middle?"
+secretlevel2 = "a cucumber" 
+
 
 while True:
     print (Riddle1)
@@ -49,4 +53,21 @@ while True:
     response = input().lower()
     if response == answer4:
         print ("I...dfgfhgjhk>...you win moral, I surender your consiousness back to your mortal body...")
+    elif response == secretlevel
+        print (secretlevel1)
+        response = input().lower()
+        if response == secretlevel2:
+            print ("hahahahahaha")
+        else:
+            print ("NO...NO...NO...the answer is cucumber!!!") 
         break
+
+
+print ("CONGRADUALTIONS, you have won the riddle game, Caden is so smart right?")
+
+
+
+
+
+
+
