@@ -14,7 +14,8 @@ Riddle1 = "What gets wet when drying?"
 answer1 = "towel"
 
 Riddle2 = "Two coins add up to 30 cents. One isn’t a nickel. What are they?"
-answer2 = "quarter nickel" 
+answer2a = "quarter" 
+answer2b = "nickel"
 
 Riddle3 = "What always ends everything?"
 answer3 = "g" 
@@ -22,38 +23,49 @@ answer3 = "g"
 Riddle4 = "I'm a god, a planet, and a measurer of heat. Who am I?"
 answer4 = "mercury"
 
-secretlevel = "_!"
+Riddle5 = "Do you want to continue living? Yes/no"
+answer5a = "yes"
+answer5b = "no"
+
+
 secretlevel1 = "Riddle me this BATMAN...What is long, hard, and has CUM in the middle?"
 secretlevel2 = "a cucumber" 
 
 
 while True:
     print(Riddle1)
-    response = input().lower()
-    if response == answer1:
+    response = input().lower().split()
+    if answer1 in response:
         print("WOW, you got it, that was the easy level, don't kid yourself")
         break
     
 while True:
     print(Riddle2)
-    response = input().lower() 
-    if response == answer2:
+    response = input().lower().split() 
+    if answer2a in response and answer2b in response:
         print("ok, ok smart guy you got it")
         break
     
 while True:
     print(Riddle3)
     response = input().lower()
-    if response == answer3:
+    if answer3 in response:
         print("*fan turns on* I...uh...fine, lets do this thing for real, you win or you end")
         break
 
 while True:
     print(Riddle4)
     response = input().lower()
-    if response == answer4:
+    if answer4 in response:
         print("I...dfgfhgjhk>...you win mortal, I surender your consiousness back to your mortal body...")
-    elif response == secretlevel:
+        break
+    
+while True:
+    print(Riddle5)
+    response = input().lower()
+    if answer5a in response:
+        print("*fan turns on* I...uh...fine, lets do this thing for real, you win or you end")
+    if answer5b in response:
         print (secretlevel1)
         response = input().lower()
         if response == secretlevel2:
@@ -63,7 +75,7 @@ while True:
         break
     break
 
-print ("CONGRADUALTIONS, you have won the riddle game, Caden is so smart right?")
+print ("CONGRADUALTIONS, you have won the riddle game, Caden is so silly right?")
 
 
 
