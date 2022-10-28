@@ -75,7 +75,7 @@ while True:
         break
     break
 
-print ("CONGRADUALTIONS, you have won the riddle game, Caden is so silly right?")
+print ("CONGRADUALTIONS, you have won the riddle game!")
 
 
 
